@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Rick Sanchez",
+    "image": "https://images.8tracks.com/avatar/i/009/500/209/cap00016-8781.png?rect=0,0,335,335&q=98&fm=jpg&fit=max"
+    
+  },
+  {
+    "id": 2,
+    "name": "Morty Smith",
+    "image": "https://pbs.twimg.com/profile_images/758480024815140865/FoGQ7dVf_400x400.jpg"
+ 
+  },
+  {
+    "id": 3,
+    "name": "Summer Smith",
+    "image": "https://vignette.wikia.nocookie.net/rickandmorty/images/a/ad/Summer_is_cool.jpeg/revision/latest?cb=20160919183158"
+    
+  },
+  {
+    "id": 4,
+    "name": "Beth Smith",
+    "image": "https://images.8tracks.com/cover/i/009/599/232/beth-2827.png?rect=172,0,432,432&q=98&fm=jpg&fit=max&w=320&h=320"
+  
+  },
+  {
+    "id": 5,
+    "name": "Jerry Smith",
+    "image": "http://www.rickandmortyshow.com/wp-content/uploads/2016/06/jerry1.jpg"
+   
+  },
+  {
+    "id": 6,
+    "name": "Mr. Meeseeks",
+    "image": "https://i.pinimg.com/originals/ab/0f/06/ab0f063c499c7cd0b70ea749550d7719.jpg"
+    
+  },
+  {
+    "id": 7,
+    "name": "Mr. Poopybutthole",
+    "image": "https://nerdist.com/wp-content/uploads/2017/07/MrPoopy_FEAT.jpg"
+    
+  },
+  {
+    "id": 8,
+    "name": "Pickle Rick",
+    "image": "https://images.prod.meredith.com/product/fc8754735c8a9b4aebb786278e7265a5/1538025388228/l/rick-and-morty-pickle-rick-sticker"
+    
+  },
+  {
+    "id": 9,
+    "name": "Bird Man",
+    "image": "http://i.imgur.com/i2H2PGn.png"
+   
+  },
+  {
+    "id": 10,
+    "name": "Snuffles/Snowball",
+    "image": "https://i.ytimg.com/vi/7OVZjbf0Q3w/maxresdefault.jpg"
+ 
+  },
+  {
+    "id": 11,
+    "name": "Mr. Goldenfold",
+    "image": "http://www.aveleyman.com/Gallery/2017/J/tve144002-3731-20131209-0.jpg"
+   
+  },
+  {
+    "id": 12,
+    "name": "Squanchy",
+    "image": "https://i.pinimg.com/originals/3e/b7/c7/3eb7c746455a1c026a652897f60cf65c.jpg"
+  
+  }
+]
