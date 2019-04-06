@@ -43,7 +43,8 @@ class App extends Component {
     if(card === undefined) {
       console.log("loser")
       this.setState({
-        score: 0
+        score: 0,
+        message: this.state.message = "Wrong, you lose!"
         
       })
     }
@@ -53,7 +54,9 @@ class App extends Component {
       console.log("correct")
       this.setState({
         score: this.state.score + 1,
-        unclicked: newCard
+        unclicked: newCard,
+        message: this.state.message = "You guessed Correctly", 
+        
       })
 
     }
@@ -84,6 +87,7 @@ class App extends Component {
       <div>
         <Navbar 
       score={this.state.score}
+      message={this.state.message}
       />
        <Wrapper>
        <Jumbotron />

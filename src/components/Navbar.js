@@ -23,7 +23,7 @@ function Navbar(props) {
          
           <li className="nav-item">
             <a className="nav-link" href="#">
-             Click an Image to Begin
+             {props.message}
              
              {/* this.state = changes when image is clicked with right or wrong message */}
              {/* You guessed Correctly! || You guessed Incorrectly!! */}
