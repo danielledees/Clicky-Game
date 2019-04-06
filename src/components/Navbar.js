@@ -1,6 +1,7 @@
 import React from "react";
 
-function Navbar() {
+
+function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="index.html">
@@ -23,12 +24,14 @@ function Navbar() {
           <li className="nav-item">
             <a className="nav-link" href="#">
              Click an Image to Begin
+             
              {/* this.state = changes when image is clicked with right or wrong message */}
+             {/* You guessed Correctly! || You guessed Incorrectly!! */}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-             Score: | Top Score:
+             Score: {props.score} | Top Score:
              {/* this.state = changes score keeps track of current guess and top score keeps track of highest scored game */}
             </a>
           </li>
