@@ -68,11 +68,8 @@ class App extends Component {
       })
       this.shuffleCards()
     }
-
-   
   
   }
-
 
 
   render() {
@@ -97,12 +94,9 @@ class App extends Component {
     </Wrapper>  
     </div>
   
-   
     );
   }
 }
-
-
 
 
 export default App;
