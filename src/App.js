@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import Wrapper from "./components/Wrapper";
 import Navbar from "./components/Navbar";
-import Jumbotron from "./components/Jumbotron";
+
 import FriendCard from "./components/FriendCard";
 import friends from "./friends.json";
 import "./style.css";
-import { timingSafeEqual } from 'crypto';
+import Title from "./components/Title";
 
 // The application should render different images (of your choice) to the screen. Each image should listen for click events.
 
@@ -29,8 +29,13 @@ class App extends Component {
 
   
 
-  shuffleCards () {
+
+  shuffleCards = () => {
     // Math.floor((Math.random() * 13) + 1);
+    for (let i = friends.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [friends[i], friends[j]] = [friends[j], friends[i]];
+  }
     
   }
 
@@ -44,7 +49,10 @@ class App extends Component {
       console.log("loser")
       this.setState({
         score: 0,
-        message: this.state.message = "Wrong, you lose!"
+        message: this.state.message = "Wrong, you lose!",
+        highScore: (this.state.score > this.state.highScore ? this.state.score : this.state.highScore),
+        friends: friends,
+        unclicked: friends
         
       })
     }
@@ -55,28 +63,13 @@ class App extends Component {
       this.setState({
         score: this.state.score + 1,
         unclicked: newCard,
-        message: this.state.message = "You guessed Correctly", 
+        message: this.state.message = "You guessed Correctly!", 
         
       })
-
+      this.shuffleCards()
     }
 
-    // if (this.state.cardArray.includes(id)) {
-    //   console.log("You Lose!")
-      
-    // }
-    // else {
-    //   console.log("update score")
-
-    //    this.setState((prevState, props) => {
-    //     return {cardArray: prevState.cardArray.push(id), score:this.state.score +1};
-      
-    //   // this.setState((prevState, props) => {
-    //   //   return {score:this.state.score +1};
-    //   // })
-      
-    //   })
-    // }
+   
   
   }
 
@@ -88,9 +81,10 @@ class App extends Component {
         <Navbar 
       score={this.state.score}
       message={this.state.message}
+      highScore={this.state.highScore}
       />
        <Wrapper>
-       <Jumbotron />
+       <Title />
        {this.state.friends.map(friend => (
          <FriendCard
            id={friend.id}

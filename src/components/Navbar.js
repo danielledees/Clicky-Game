@@ -3,45 +3,16 @@ import React from "react";
 
 function Navbar(props) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="index.html">
+    <nav className="navbar">
+     <a className="navbar" href="index.html">
         Clicky Game
       </a>
-      <button
-        className="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon" />
-      </button>
-
-      <div className="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
-         
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-             {props.message}
-             
-             {/* this.state = changes when image is clicked with right or wrong message */}
-             {/* You guessed Correctly! || You guessed Incorrectly!! */}
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-             Score: {props.score} | Top Score:
-             {/* this.state = changes score keeps track of current guess and top score keeps track of highest scored game */}
-            </a>
-          </li>
-          
-         
-        </ul>
-       
-      </div>
+      <span className="navMessage"> {props.message}</span>
+      <span className="navScore"> Score: {props.score} | Top Score: {props.highScore}</span>
     </nav>
-  );
+  )
+
+  
 }
 
 export default Navbar;
